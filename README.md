@@ -3,7 +3,7 @@
 Расширение для Visual Studio Code, которое заменяет короткие команды
 готовыми конструкциями языка C++.
 
-![Plugin demo](vscode-main-plugin.gif)
+![Plugin demo](https://raw.githubusercontent.com/sevchik51-hub/code-pattern-builder/main/GIF/vscode-main-plugin.gif)
 
 Проект написан на TypeScript. Пользователь вводит команду в отдельной
 строке C++-файла, а затем нажимает `Enter` или `Tab`. Расширение прoверяет
