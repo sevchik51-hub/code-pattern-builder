@@ -1,0 +1,66 @@
+{
+  "name": "code-pattern-builder",
+  "publisher": "Sevchik",
+  "displayName": "Code Pattern Builder",
+  "description": "Устал писать одни и те же паттерны руками? Севчик всё решил за тебя",
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sevchik51-hub/code-pattern-builder.git"
+  },
+  "files": [
+    "out/**",
+    "README.md",
+    "GIF/**"
+  ],
+  "engines": {
+    "vscode": "^1.140.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "code-pattern-builder.createPattern",
+        "title": "Code Pattern Builder: создать конструкцию"
+      },
+      {
+        "command": "code-pattern-builder.expandOnEnter",
+        "title": "Code Pattern Builder: раскрыть по Enter"
+      },
+      {
+        "command": "code-pattern-builder.expandOnTab",
+        "title": "Code Pattern Builder: раскрыть по Tab"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "code-pattern-builder.expandOnEnter",
+        "key": "enter",
+        "when": "editorTextFocus && editorLangId == cpp"
+      },
+      {
+        "command": "code-pattern-builder.expandOnTab",
+        "key": "tab",
+        "when": "editorTextFocus && editorLangId == cpp"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.140.0",
+    "@types/node": "24.x",
+    "typescript": "^6.0.3"
+  },
+  "overrides": {
+    "diff": "^8.0.4",
+    "serialize-javascript": "^7.0.6"
+  }
+}

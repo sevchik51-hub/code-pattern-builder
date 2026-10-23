@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Compiled extension output
+out/
+
+# Test and coverage output
+.vscode-test/
+coverage/
+
+# Packaged extension
+*.vsix
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Operating system files
+.DS_Store
+Thumbs.db
